@@ -1,0 +1,61 @@
+body {
+  width: 500px;
+  height: 700px;
+
+  background-image:url(150329shiro.JPG);
+  background-repeat: no-repeat;
+  background-size: 560px;
+  background-position: center top;
+  
+  margin-right: auto;
+  margin-left : auto;
+}
+
+h5 {
+    color:lightgray;
+  }
+  
+.face {
+  color: #FDFFFF;　/*白は透けないまま*/
+}
+
+.back {
+  color: tomato;
+  opacity:0.6  /*空に少し透ける感じ*/
+}
+
+button {
+  padding: 5px 15px;
+  background-color: tomato;
+  color: #FDFFFF;
+  border-style: none;
+  border-radius:0px 10px 10px 0px;
+  /*右端角を丸く*/
+}
+
+input {
+  height: 27px;
+  border-style: none;
+  border-radius:10px 0px 0px 10px;
+  /*左端角を丸く*/
+}
+
+p {
+    color:#FDFFFF;
+}
+
+a {           
+    color:#FDFFFF;   
+   }
+
+footer {
+     width: 500px;
+ 　 height: 50px;
+      position: absolute; /*絶対位置*/
+      bottom: 15px; /*下からの距離**/
+     text align:center;
+ }
+ 
+h6 {
+    color:lightgray;
+  }
