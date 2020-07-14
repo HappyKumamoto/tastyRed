@@ -35,3 +35,10 @@ const answer = answerInput.value;
         document.getElementById('result-area').innerHTML="おしいです！<br>再度挑戦してみてください！";
     };
  };
+
+ //エンターキーでも機能する
+ answerInput.onkeydown = event => {
+     if (event.key === 'Enter') {
+         assessmentButton.onclick();
+      }
+};
