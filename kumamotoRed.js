@@ -37,8 +37,8 @@ const answer = answerInput.value;
  };
 
  //エンターキーでも機能する
- answerInput.onkeydown = event => {
-     if (event.key === 'Enter') {
-         assessmentButton.onclick();
-      }
-};
+ //answerInput.onkeydown = event => {
+     //if (event.key === 'Enter') {
+         //assessmentButton.onclick();
+     // }
+//};
