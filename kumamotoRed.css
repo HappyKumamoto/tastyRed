@@ -11,6 +11,7 @@ body {
   margin-left : auto;
 }
 
+
 h5 {
     color:lightgray;
   }
@@ -63,8 +64,13 @@ h5 {
   width: 0px;
   height: 0px;
   z-index: -1; /*重なりの一番下*/
-  left:53%;
+  left:45%;
 }
+
+.rotated {
+  transform: rotate(-15deg); /* 少し傾ける*/
+  }
+
 
 button {
   padding: 5px 15px;
