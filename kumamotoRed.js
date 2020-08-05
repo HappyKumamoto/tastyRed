@@ -3,7 +3,7 @@ let degree = 0; //角度
 
 function rotateHeader() {
     degree += 6  ;
-  degree = degree % 360;
+    degree = degree % 360;
  if ( ( 90<=degree && degree <270) ) {
       header.className = 'face';  //表面のclassを設定
   } else {
@@ -13,6 +13,7 @@ function rotateHeader() {
   header.style.transform = 'rotate3D(1,1,1,'+ degree+'deg)';
 }
 setInterval(rotateHeader, 150);
+//ゆったり回る感じ
 //150ミリ秒ごとにrotateHeader関数を実行する
 
 
@@ -35,10 +36,21 @@ const answer = answerInput.value;
         document.getElementById('result-area').innerHTML="おしいです！<br>再度挑戦してみてください！";
     };
  };
-
+ 
  //エンターキーでも機能する
  //answerInput.onkeydown = event => {
-     //if (event.key === 'Enter') {
-         //assessmentButton.onclick();
-     // }
+    // if (event.key === 'Enter') {
+        // assessmentButton.onclick();
+    //  }
 //};
+
+//エンターキーのとき、
+//日本語変換完了のEnterと区別したいので試作中
+//answerInput.onkeydown = event => {
+       // if ( 13 === event.keyDownCode  &&  event.keyUpCode===13) {
+       // assessmentButton.onclick();
+      //  } else {
+      //  return;
+       // }
+//};
+
