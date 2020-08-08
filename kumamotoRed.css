@@ -35,7 +35,7 @@ h5 {
   line-height: 20px;
   text-align: center;
   background-color: #FDFFFF;
-  color: rgb(51,123,255); /*写真の青に合わせたい*/
+  color: rgb(51,123,255); /*写真の空の青に合わせたい*/
   border: none;
   z-index: 0;
   border-radius: 15px 15px 15px  15px;/*丸み*/
