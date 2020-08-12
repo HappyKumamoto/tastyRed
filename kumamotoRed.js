@@ -1,3 +1,4 @@
+
 let header = document.getElementById('header');
 let degree = 0; //角度
 
@@ -38,19 +39,18 @@ const answer = answerInput.value;
  };
  
  //エンターキーでも機能する
+  answerInput.onkeydown = event => {
+    if (event.keyCode === 13) {
+      assessmentButton.onclick();
+    }
+  };
+  
+ //以下のコードでは
+ //日本語変換完了と同時になるので上に変更
  //answerInput.onkeydown = event => {
     // if (event.key === 'Enter') {
         // assessmentButton.onclick();
     //  }
 //};
 
-//エンターキーのとき、
-//日本語変換完了のEnterと区別したいので試作中
-//answerInput.onkeydown = event => {
-       // if ( 13 === event.keyDownCode  &&  event.keyUpCode===13) {
-       // assessmentButton.onclick();
-      //  } else {
-      //  return;
-       // }
-//};
 
