@@ -28,7 +28,8 @@ h5 {
   opacity:0.5       /*透ける*/
 }
 
-/*.balloon {           /*ふきだし部分*/
+/*「うまか~」のふきだし部分(シンプルにしたくて取りやめ中)*/
+/*.balloon {          
 /*  position: relative;
   display: inline-block;
   padding: 5px;
@@ -90,7 +91,7 @@ input {       /*左端角を丸く*/
 p {
     color:#FDFFFF;
      /*position: relative; 
-     top:-10px; */
+     top:-10px; 
 }
 
 a {           
