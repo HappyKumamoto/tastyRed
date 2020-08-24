@@ -48,12 +48,3 @@ const answer = answerInput.value;
     }
   };
   
- //以下のコードでは
- //日本語変換完了と同時になるので上に変更
- //answerInput.onkeydown = event => {
-    // if (event.key === 'Enter') {
-        // assessmentButton.onclick();
-    //  }
-//};
-
-
