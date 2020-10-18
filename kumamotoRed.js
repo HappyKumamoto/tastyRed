@@ -34,8 +34,8 @@ const answer = answerInput.value;
    if(answer==='くまもと') {    //正解の時のみ、応募フォームを表示する
         document.getElementById('result-area').innerHTML=('大正解！<br>九州 くまもとの「とまと」' + 
         '「赤牛」<br>「車海老」「天草大王(赤鶏)」他<br>盛りだくさんの中からうまか赤<br>を' +
-        ' お選びください！<br><p>＊==============＊<br><a href = "https://www.nnn.ed.nico" target="_blank">' +
-        ' ご応募はこちら(N予備校)</a></p>'); 
+        ' お選びください！<br><p>＊==============＊<br><a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">' +
+        ' ご応募はこちら(Heroku)</a></p>'); 
     }else{
         document.getElementById('result-area').innerHTML="おしいです！<br>再度挑戦してみてください！";
     };
