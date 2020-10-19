@@ -8,17 +8,17 @@ function rotateHeader() {
  if ( ( 90<=degree && degree <270) ) {
       header.className = 'face';  //表面のclassを設定
   } else {
-      header.className = 'back';  //裏面のclassを設定
+      header.className = 'back'; //裏面のclassを設定
   }
   //3Dで動かす
   header.style.transform = 'rotate3D(1,1,1,'+ degree+'deg)';
 }
 setInterval(rotateHeader, 150);
-   //ゆったり回る感じ
-   //150ミリ秒ごとにrotateHeader関数を実行する
+//ゆったり回る感じ
+//150ミリ秒ごとにrotateHeader関数を実行する
 
 
-    //回答欄とその下部分
+//回答欄とその下部分
 'use strict';
 const answerInput = document.getElementById('answer');
 const assessmentButton =    document.getElementById('assessment');
@@ -31,20 +31,29 @@ const answer = answerInput.value;
         return;
     };
     
-   if(answer==='くまもと') {    //正解の時のみ、応募フォームを表示する
-        document.getElementById('result-area').innerHTML=('大正解！<br>九州 くまもとの「とまと」' + 
-        '「赤牛」<br>「車海老」「天草大王(赤鶏)」他<br>盛りだくさんの中からうまか赤<br>を' +
-        ' お選びください！<br><p>＊==============＊<br><a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">' +
-        ' ご応募はこちら(Heroku)</a></p>'); 
-    }else{
-        document.getElementById('result-area').innerHTML="おしいです！<br>再度挑戦してみてください！";
+   if(answer==='くまもと') {   //正解の時のみ、応募フォームを表示する
+        document.getElementById('result-area').innerHTML=(`大正解！<br>九州 くまもとの「とまと」
+        「赤牛」<br>「車海老」「天草大王(赤鶏)」他<br>盛りだくさんの中からうまか赤<br>
+        をお選びください！<br> <p >＊==============＊<br> 
+        <a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">
+        ご応募はこちら(Heroku)</a> </p>`);     }else{
+        document.getElementById('result-area').innerHTML=`おしいです！<br>再度挑戦してみてください！`;
     };
  };
  
-      //エンターキーでも機能する
+ //エンターキーでも機能する
   answerInput.onkeydown = event => {
     if (event.keyCode === 13) {
-    assessmentButton.onclick();
+      assessmentButton.onclick();
     }
   };
   
+ //以下のコードでは
+ //日本語変換完了と同時になるので上に変更
+ //answerInput.onkeydown = event => {
+    // if (event.key === 'Enter') {
+        // assessmentButton.onclick();
+    //  }
+//};
+
+
