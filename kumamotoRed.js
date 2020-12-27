@@ -36,8 +36,10 @@ const answer = answerInput.value;
         「赤牛」<br>「車海老」「天草大王(赤鶏)」他<br>盛りだくさんの中から美味なる
         <span style="color:tomato; font-size:160%;">赤</span><br>
         をお選びください！<br> 
-        <a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">
-        ご応募はこちら(Heroku)</a> </p>`);     }else{
+        <a href = "https://www.nnn.ed.nico/" target="_blank">ご応募はこちら(N予備校)</a> </p>`);
+        //<a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">
+        //ご応募はこちら(Heroku)</a> </p>`);
+       }else{
         document.getElementById('result-area').innerHTML=`おしいです！<br>
         再度挑戦してみてください！`;
     };
