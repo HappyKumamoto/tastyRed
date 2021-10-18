@@ -32,11 +32,10 @@ const answer = answerInput.value;
     };
     
    if(answer==='くまもと') {   //正解の時のみ、応募フォームを表示する
-        document.getElementById('result-area').innerHTML=(`大正解！<br>九州 くまもとの「とまと」
-        「赤牛」<br>「車海老」「天草大王(赤鶏)」他<br>盛りだくさんの中から美味なる
-        <span style="color:tomato; font-size:160%;">赤</span><br>
-        をお選びください！<br> 
-        <a href = "https://www.nnn.ed.nico/" target="_blank">ご応募はこちら(N予備校)</a> </p>`);
+        document.getElementById('result-area').innerHTML=(`大正解！<br>よろしかったら<br>九州 くまもとの 人気スポットや<br>特に美味なる
+        <span style="color:tomato; font-size:160%;">赤</span>食材についての<br>
+        アンケートにお答えください。<br>お願いいたします。<br>
+        <a href = "https://www.nnn.ed.nico/" target="_blank">アンケートはこちら(N予備校)</a> </p>`);
         //<a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">
         //ご応募はこちら(Heroku)</a> </p>`);
        }else{
