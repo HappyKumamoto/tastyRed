@@ -35,7 +35,7 @@ const answer = answerInput.value;
         document.getElementById('result-area').innerHTML=(`大正解！<br>よろしかったら<br>九州 くまもとの 人気スポットや<br>特に美味なる
         <span style="color:tomato; font-size:160%;">赤</span>食材についての<br>
         アンケートにお答えください。<br>お願いいたします。<br>
-        <a href = "https://www.nnn.ed.nico/" target="_blank">アンケートはこちら(N予備校)</a> </p>`);
+        <a href = "https://secure-dusk-48588.herokuapp.com/applicationForm/tasty-red" target="_blank">アンケートはこちら(Heroku)</a> </p>`);
         //<a href = "https://secret-shore-96743.herokuapp.com/enquetes/tasty-red" target="_blank">
         //ご応募はこちら(Heroku)</a> </p>`);
        }else{
